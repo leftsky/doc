@@ -5,7 +5,7 @@
 
 [Solidity 以太坊文档](https://solidity.readthedocs.io/en/latest/)
 
-[Laravel6 中文文档](https://learnku.com/docs/laravel/6.x/releases/5121)
+[Laravel7 中文文档](https://learnku.com/docs/laravel/7.x/releases/7444)
 
 [uni-app 文档](https://uniapp.dcloud.io/)
 
