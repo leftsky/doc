@@ -12,6 +12,7 @@
 
    notes
    nav
+   eth_article1
 
 索引
 ==================
