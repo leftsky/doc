@@ -1,28 +1,28 @@
 笔记
 =========
 
-# git 设置全局代理
+## git 设置全局代理
 
 `git config --global http.proxy 'socks5://127.0.0.1:1080'` 
 
-# comopser 设置源
+## comopser 设置源
 
 `composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/` 
 
-# VM
+## VM
 
 VM15 密钥： `UY758-0RXEQ-M81WP-8ZM7Z-Y3HDA` 
 
-# php-sqlsrv扩展
+## php-sqlsrv扩展
 
 解压so动态链接库文件到 `/sbin/` 目录下
 
 在PHP配置文件中添加
 `extension=/sbin/php_pdo_sqlsrv_72_nts.so` 
 
-# 开启宝塔 FTP 日志
+## 开启宝塔 FTP 日志
 
-## 开启宝塔FTP日志 
+#### 开启宝塔FTP日志 
 
 安装很简单，配置不简单，第一次看纯英文的帮助文档，当然偶尔也Google一下，但是发现关于pure-ftp的不是很多……
 
@@ -38,7 +38,7 @@ VM15 密钥： `UY758-0RXEQ-M81WP-8ZM7Z-Y3HDA`
 
 2>在/etc/rsyslog.conf文件最后加上
 
-## pureftp 日志
+#### pureftp 日志
 
 ftp.* -/var/log/pureftpd.log
 
@@ -50,9 +50,9 @@ ftp.* -/var/log/pureftpd.log
 
 重启puerftpd service pure-ftpd restart
 
-# Laravel
+## Laravel
 
-## telescope
+#### telescope
 
 `composer require laravel/telescope` 
 
@@ -66,27 +66,27 @@ app/Console/Kernel.php -> public function schedule()
 
 `$schedule->command('telescope:prune --hours=48')->daily();` 
 
-## 上传文件link
+#### 上传文件link
 
 `php artisan storage:link` 
 
 public 替换成storage
 
-# mysql
+## mysql
 
-## mysql授权远程登陆
+#### mysql授权远程登陆
 
 `GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY '1qaz!QAZ' WITH GRANT OPTION;` 
 
 注意普通安装mysql需求检查my.cnf里的bind不要绑定死本地。
 
-## 解决mariadb默认无密码
+#### 解决mariadb默认无密码
 
 `UPDATE mysql.user SET authentication_string = PASSWORD('1qaz!QAZ'), plugin = 'mysql_native_password' WHERE User = 'root' AND Host = 'localhost';` 
 
-# Fastadmin
+## Fastadmin
 
-## 一键crud
+#### 一键crud
 
 `php think crud -t 表名 -u 1` 
 
@@ -94,15 +94,15 @@ public 替换成storage
 
 `php think crud -t users -u 1 --force=true` 
 
-## 自动跳转登录页
+#### 自动跳转登录页
 
 `<meta http-equiv="refresh" content="0; url=./xxx.php/index/login" />` 
 
-# Linux
+## Linux
 
-## Debian
+#### Debian
 
-### Debian 9 阿里云源
+###### Debian 9 阿里云源
 
 ``` 
 deb http://mirrors.aliyun.com/debian/ stretch main non-free contrib
@@ -115,9 +115,9 @@ deb http://mirrors.aliyun.com/debian/ stretch-backports main non-free contrib
 deb-src http://mirrors.aliyun.com/debian/ stretch-backports main non-free contrib 
 ```
 
-## Ubuntu
+#### Ubuntu
 
-### Ubuntu 阿里源
+###### Ubuntu 阿里源
 
 ``` 
 deb http://mirrors.aliyun.com/ubuntu/ bionic main restricted universe multiverse
@@ -132,9 +132,9 @@ deb-src http://mirrors.aliyun.com/ubuntu/ bionic-proposed main restricted univer
 deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted universe multiverse
 ```
 
-## 树莓派
+#### 树莓派
 
-### 远程桌面
+###### 远程桌面
 
 ``` 
 apt install tightvncserver
@@ -142,7 +142,7 @@ apt install xrdp
 reboot
 ```
 
-### 设置树莓派静态IP
+###### 设置树莓派静态IP
 
 ``` 
 interface eth0
@@ -151,7 +151,7 @@ static routers=121.248.54.55
 static domain_name_servers=121.248.0.1 8.8.8.8
 ```
 
-### 树莓派源
+###### 树莓派源
 
 ``` 
 sudo sed -i 's#://raspbian.raspberrypi.org#s://mirrors.ustc.edu.cn/raspbian#g' /etc/apt/sources.list
@@ -161,19 +161,19 @@ sudo sed -i 's#://raspbian.raspberrypi.org#s://mirrors.ustc.edu.cn/raspbian#g' /
 sudo sed -i 's#://archive.raspberrypi.org/debian#s://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian#g' /etc/apt/sources.list.d/raspi.list 
 ``` 
 
-# geth
+## geth
 
-## 指定数据目录启动
+#### 指定数据目录启动
 
 `./geth --datadir "D:/eth_data/"` 
 
-# nodejs
+## nodejs
 
-## cnpm
+#### cnpm
 
 `npm install -g cnpm --registry=https://registry.npm.taobao.org` 
 
-## 替换阿里源
+#### 替换阿里源
 
 `将你的xml文件备份，内容全部替换成下方的内容` 
 ``` 
