@@ -3,18 +3,18 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to leftsky's documentation!
+欢迎阅读leftsky Docs!
 ===================================
 
 .. toctree::
    :maxdepth: 4
-   :caption: '目录':
+   :caption: 目录:
 
-   '笔记'
+   笔记
    hello
    h3
 
-Indices and tables
+索引
 ==================
 
 * :ref:`genindex`
