@@ -8,8 +8,9 @@ Welcome to leftsky's documentation!
 
 .. toctree::
    :maxdepth: 4
-   :caption: Contents:
+   :caption: '目录':
 
+   '笔记'
    hello
    h3
 
