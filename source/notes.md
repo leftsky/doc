@@ -20,6 +20,14 @@ VM15 密钥： `UY758-0RXEQ-M81WP-8ZM7Z-Y3HDA`
 在PHP配置文件中添加
 `extension=/sbin/php_pdo_sqlsrv_72_nts.so` 
 
+## Android Studio
+
+### AS 设置最大使用内存
+
+找到启动目录下的执行文件 例：studio64.exe
+
+编辑执行文件名.vmoptions内容的-Xmx就是允许使用的最大内存
+
 ## 开启宝塔 FTP 日志
 
 #### 开启宝塔FTP日志 
