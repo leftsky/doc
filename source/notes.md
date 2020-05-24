@@ -108,6 +108,15 @@ public 替换成storage
 
 ## Linux
 
+### 开机启动
+
+```
+vim /etc/rc.local
+nohup /home/your_program >> /home/your_program.txt &
+```
+
+& 代表后台运行，不阻塞 此段代码加到exit 0前即可
+
 #### Debian
 
 ###### Debian 9 阿里云源
